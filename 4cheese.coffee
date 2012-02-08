@@ -1,13 +1,11 @@
 fs      = require('fs')
 http    = require('http')
 path    = require('path')
-$       = require('jQuery')
 _       = require('underscore')
-jsdom   = require("jsdom")
 mkdirp  = require('mkdirp')
 request = require('request')
 
-global.base_path = "/Users/micho/code/4cheese/output"
+global.base_path = "#{__dirname}/output"
 
 # Get all threads from the given board
 getThreads = (board, callback) ->
